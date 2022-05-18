@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* --- == ===  G L O B A L S  === == --- */
 * {
@@ -8,7 +8,7 @@
 }
 
 :root {
-  --fontmain: 'Poppins', sans-serif;
+  --fontmain: "Poppins", sans-serif;
   --whitecolor: #ffffff;
   --headfootcolor: #0d6efd;
   --bgcolor: #eff2ff;
@@ -42,12 +42,12 @@ h2 {
   font-weight: 600;
 }
 
-
 /* --- == ===   I N D E X   M A I N   S E C T I O N   === == --- */
 
 /* H E R O   S E C T I O N */
 .bg-dark {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +147,6 @@ h1 {
   color: var(--starcolor);
 }
 
-
 /* --- == ===   A B O U T   U S   M A I N   S E C T I O N   === == --- */
 .team {
   display: flex;
@@ -205,7 +204,6 @@ h1 {
   transform: scale(2);
 }
 
-
 /* --- == ===   S E R V I C E   M A I N   S E C T I O N   === == --- */
 .services {
   display: flex;
@@ -223,7 +221,7 @@ h1 {
   margin: 10px;
   overflow: hidden;
   position: relative;
-  transition: all 0.3s cubic-bezier(0.02,0.01,0.47,1);
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
 .card-service .fa-solid {
@@ -258,15 +256,15 @@ h1 {
 }
 
 .card-service:hover {
-  color: var(--lightblue)
+  color: var(--lightblue);
   border: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   animation: rotate 0.7s ease-in-out both;
 }
 
 .card-service:before,
 .card-service:after {
-  content: '';
+  content: "";
   background-color: var(--lightblue);
   width: 180px;
   height: 180px;
@@ -276,8 +274,8 @@ h1 {
   right: 0;
   bottom: -80px;
   z-index: -1;
-  transform: translate(100%, -25%) translate3d(0,0,0);
-  transition: all 0.15s cubic-bezier(0.02,0.01,0.47,1);
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+  transition: all 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
 .card-service:hover:before,
@@ -286,19 +284,29 @@ h1 {
 }
 
 .card-service:hover:before {
-  transform: translate3d(50%,0,0) scale(0.9);
+  transform: translate3d(50%, 0, 0) scale(0.9);
 }
 
 .card-service:hover:after {
-  transform: translate(50%,0) scale(1.1);
+  transform: translate(50%, 0) scale(1.1);
 }
 
 @keyframes rotate {
-  0%{transform: rotate(0deg);}
-  25%{transform: rotate(3deg);}
-  50%{transform: rotate(-3deg);}
-  75%{transform: rotate(1deg);}
-  100%{transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .card-service a {
@@ -306,12 +314,11 @@ h1 {
   font-weight: 500;
 }
 
-
 /* --- == ===   F O O T E R   S E C T I O N   === == --- */
 .footer {
   /* display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;*/
   background-color: var(--headfootcolor);
   padding: 30px 0px 30px 0px;
   margin-top: 40px;
@@ -345,7 +352,6 @@ h1 {
   font-size: 35px;
   padding: 18px;
 }
-
 
 /* --- == ===  M E D I A   Q U E R Y S  === == --- */
 @media screen and (max-width: 1200px) {
