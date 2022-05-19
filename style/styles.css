@@ -17,6 +17,7 @@
   --namecolor: #ff3d00;
   --starcolor: #f1c40f;
   --iconcolor: #e92f3d;
+  --circlecolor: #EE7B85;
   --blackcolor: #000000;
   --btncolor: #ff6804;
 }
@@ -147,7 +148,7 @@ h1 {
 }
 
 /* --- == ===   A B O U T   U S   M A I N   S E C T I O N   === == --- */
-.team {
+/* .team {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -200,6 +201,73 @@ h1 {
 
 .card-team .info .icons a:hover {
   color: var(--iconcolor);
+  transform: scale(2);
+} */
+
+/* Probando nuevos estilos para el nuevo modelo team */
+.card-team {
+  box-shadow: 0 0 30 px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.bg-card img {
+  height: 250px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.pic-team img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid var(--whitecolor);
+  margin-top: -80px;
+}
+
+.card-team:hover .pic-team img {
+  border-color: var(--circlecolor);
+  transition: .7s;
+}
+
+.main-text {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-text h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.25rem;
+  margin: 0 0 20px;
+  color: var(--iconcolor)
+}
+
+.main-text p {
+  font-size: 1rem;
+  padding: 0 35px;
+}
+
+.socials {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  color: var(--iconcolor);
+  padding: 0 10px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.socials a:hover {
   transform: scale(2);
 }
 
