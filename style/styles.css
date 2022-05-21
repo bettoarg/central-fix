@@ -148,128 +148,131 @@ h1 {
 }
 
 /* --- == ===   A B O U T   U S   M A I N   S E C T I O N   === == --- */
-/* .team {
+.card-wrapper {
   display: flex;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .card-team {
-  height: 550px;
-  width: 290px;
-  margin: 20px;
-  box-shadow: 0 3px 5px var(--blackcolor);
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
+  width: 32rem;
+  background-color: var(--whitecolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.3rem 2rem;
+  box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  transition: transform 1s;
 }
 
-.card-team .bg-image img {
+.card-team .card-bg {
   width: 100%;
-  height: 230px;
+  height: 26rem;
   object-fit: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
 }
 
-.card-team .pic img {
-  height: 120px;
-  width: 120px;
+.card-person {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
   border-radius: 50%;
-  border: 10px solid var(--bgcolor);
-  margin-top: -90px;
-  position: relative;
+  margin-top: -11rem;
+  z-index: 999;
+  border: .7rem solid var(--whitecolor);
 }
 
-.card-team .info h3 {
-  color: var(--iconcolor);
-  padding: 10px 0;
+.card-team h3 {
+  font-size: 2.5rem;
+  color: var(--darkblue);
+  margin: 1.5rem 0;
 }
 
-.card-team .info p {
-  font-size: 15px;
-  padding: 10px 20px;
-  color: var(--lightblue);
+.job-title {
+  color: #777777;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
-.card-team .info .icons a {
-  font-size: 20px;
+.about {
+  font-size: 1.2rem;
+  margin: 1.5rem 1.6rem;
+  text-align: center;
+}
+
+.card-team a {
   text-decoration: none;
-  color: var(--iconcolor);
-  margin-top: 20px;
-  padding: 0 5px;
-  transition: all 1s;
 }
 
-.card-team .info .icons a:hover {
-  color: var(--iconcolor);
-  transform: scale(2);
-} */
-
-/* Probando nuevos estilos para el nuevo modelo team */
-.card-team {
-  box-shadow: 0 0 30 px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  border-radius: 15px;
+.card-team .buttom {
+  padding: 1rem 2.5rem;
+  background-color: var(--darkblue);
+  border-radius: 2rem;
+  margin: 1rem 0;
+  color: #eeeeee;
+  font-size: 1.4rem;
+  transition: all .5s;
 }
 
-.bg-card img {
-  height: 250px;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+.card-team .buttom:hover {
+  transform: translateY(-2px);
+  box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2);
+}
+
+.card-team .buttom:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.social-media {
   width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.pic-team img {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 7px solid var(--whitecolor);
-  margin-top: -80px;
-}
-
-.card-team:hover .pic-team img {
-  border-color: var(--circlecolor);
-  transition: .7s;
-}
-
-.main-text {
-  padding: 30px 0;
-  text-align: center;
-}
-
-.main-text h3 {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.25rem;
-  margin: 0 0 20px;
-  color: var(--iconcolor)
-}
-
-.main-text p {
-  font-size: 1rem;
-  padding: 0 35px;
-}
-
-.socials {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.socials a {
+.social-media i {
   font-size: 1.5rem;
   color: var(--iconcolor);
-  padding: 0 10px;
-  text-decoration: none;
   transition: all 1s;
 }
 
-.socials a:hover {
+.social-media i:hover {
   transform: scale(2);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.card-team:nth-child(1) {
+  animation: fadeIn .5s .5s backwards;
+}
+.card-team:nth-child(2) {
+  animation: fadeIn .5s 1s backwards;
+}
+.card-team:nth-child(3) {
+  animation: fadeIn .5s 1.5s backwards;
+}
+.card-team:nth-child(4) {
+  animation: fadeIn .5s 2s backwards;
+}
+
+.card-team:hover {
+  transform: scale(1.05);
+}
+
+
 
 /* --- == ===   S E R V I C E   M A I N   S E C T I O N   === == --- */
 .services {
@@ -408,11 +411,7 @@ h1 {
 }
 
 .tituloSection {
-  padding: 50px 0;
   color: var(--darkblue);
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
 }
 
 .socialMedia a i {
