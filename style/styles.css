@@ -154,7 +154,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.card {
+.card-team {
   height: 550px;
   width: 320px;
   margin: 20px;
@@ -164,14 +164,14 @@ h1 {
   text-align: center;
 }
 
-.card .bg-image img {
+.card-team .bg-image img {
   width: 100%;
   height: 230px;
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
 }
 
-.card .pic img {
+.card-team .pic img {
   height: 120px;
   width: 120px;
   border-radius: 50%;
@@ -180,18 +180,18 @@ h1 {
   position: relative;
 }
 
-.card .info h3 {
+.card-team .info h3 {
   color: var(--darkblue);
   padding: 10px 0;
 }
 
-.card .info p {
+.card-team .info p {
   font-size: 15px;
   padding: 10px 20px;
   color: var(--darkblue);
 }
 
-.card .info .icons a {
+.card-team .info .icons a {
   font-size: 20px;
   text-decoration: none;
   color: var(--iconcolor);
@@ -200,7 +200,7 @@ h1 {
   transition: all 1s;
 }
 
-.card .info .icons a:hover {
+.card-team .info .icons a:hover {
   color: var(--iconcolor);
   transform: scale(2);
 }
@@ -317,10 +317,11 @@ h1 {
 }
 
 /* --- == ===   F O O T E R   S E C T I O N   === == --- */
-.footer {
-  /* display: flex;
+/* Esta seccion de CSS esta desactivada temporalmente hasta confirmar que el footer actual haya quedado en correcto funcionamiento */
+/* .footer {
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
   background-color: var(--headfootcolor);
   padding: 30px 0px 30px 0px;
   margin-top: 40px;
@@ -349,7 +350,7 @@ h1 {
   color: var(--whitecolor);
   font-size: 35px;
   padding: 18px;
-}
+} */
 
 /* --- == ===  M E D I A   Q U E R Y S  === == --- */
 @media screen and (max-width: 1200px) {
