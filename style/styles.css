@@ -38,7 +38,7 @@ body {
 h2 {
   padding: 50px;
   text-align: center;
-  font-size: 35px;
+  font-size: 2.2rem;
   color: var(--darkblue);
   font-weight: 600;
 }
@@ -68,7 +68,126 @@ h1 {
 }
 
 /* S E R V I C E  S E C T I O N */
-.services-wrapper {
+/* nueva version para probar a ver que onda */
+/* tercera idea */
+.repair-mobile > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+
+.repair-mobile > div img {
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  margin: 40px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.paragraph h3 {
+  color: var(--darkblue);
+}
+
+.repair-notebooks > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 2.2rem;
+}
+
+.repair-notebooks > div img {
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.accesories > div {
+  display: flex;
+  align-items: center;
+}
+
+.accesories > div img {
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1199px) {
+  .repair-mobile > div {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .repair-notebooks > div {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .accesories > div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .repair-mobile > div img {
+    width: 100%;
+  }
+
+  .repair-notebooks > div img {
+    width: 100%;
+  }
+
+  .accesories > div img {
+    width: 100%;
+  }
+}
+
+
+/* segunda idea */
+/* .repair-grid {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  justify-items: center;
+  align-items: center;
+}
+
+.repair-text h3 {
+  color: var(--darkblue);
+  margin-bottom: 1.5rem;
+}
+
+.repair-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.picture {
+  max-width: 80%;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .repair-grid {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .repair-text:last-child {
+    grid-row: 3/4;
+  }
+} */
+
+/* version anterior */
+/* .services-wrapper {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   width: 95%;
   margin: auto;
@@ -96,7 +215,7 @@ h1 {
 
 .service p {
   color: var(--darkblue);
-}
+} */
 
 /* T E S T I M O N I A L   S E C T I O N */
 .testimonials {
@@ -196,7 +315,7 @@ h1 {
 }
 
 .card-team .info .icons a {
-  font-size: 20px;
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--iconcolor);
   margin-top: 20px;
