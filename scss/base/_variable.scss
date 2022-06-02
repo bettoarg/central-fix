@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/* Variables globales */
 $fontmain: "Poppins", sans-serif;
 $whitecolor: #ffffff;
 $headfootcolor: #0d6efd;
@@ -16,10 +15,6 @@ $btncolor: #ff6804;
 
 body {
   background-color: $bgcolor;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
 }
 
 h2 {

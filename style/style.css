@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -7,14 +6,13 @@
           box-sizing: border-box;
 }
 
-/* Variables globales */
-body {
-  background-color: #eff2ff;
-}
-
 .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body {
+  background-color: #eff2ff;
 }
 
 h2 {
@@ -38,7 +36,7 @@ h2 {
   background-attachment: fixed;
 }
 
-h1 {
+.bg-dark h1 {
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
@@ -47,7 +45,6 @@ h1 {
   height: 100vh;
 }
 
-/* Sección principal del documento index */
 .repair-mobile > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +129,7 @@ h1 {
   margin-top: 1rem;
 }
 
-.testimonials img {
+.testimonials .testimonial-item img {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
@@ -144,7 +141,7 @@ h1 {
   z-index: 99;
 }
 
-.testimonials .testimonial-info {
+.testimonials .testimonial-item .testimonial-info {
   background-color: #ffffff;
   padding: 5.5rem 2rem 2rem 2rem;
   margin-top: -4rem;
@@ -153,7 +150,7 @@ h1 {
           box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px;
 }
 
-.testimonials p {
+.testimonials .testimonial-item .testimonial-info p {
   color: #242a56;
   font-style: italic;
   line-height: 1.3rem;
@@ -161,25 +158,25 @@ h1 {
   text-align: center;
 }
 
-.testimonials h4 {
+.testimonials .testimonial-item .testimonial-info h4 {
   color: #ff3d00;
   line-height: 1.3rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.testimonials .testimonial-rating {
+.testimonials .testimonial-item .testimonial-info .testimonial-rating {
   text-align: center;
   color: #f1c40f;
-}
-
-.social-icon a {
-  text-decoration: none;
 }
 
 .social-icon span {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.social-icon a {
+  text-decoration: none;
 }
 
 .link-footer .text-footer {
@@ -249,7 +246,7 @@ h1 {
   padding: 10px 0;
 }
 
-.team .card-team .info h3 p {
+.team .card-team .info p {
   font-size: 14px;
   padding: 15px 20px;
   color: #242a56;
@@ -312,6 +309,11 @@ h1 {
   margin: 18px;
 }
 
+.services .card-service .content p {
+  color: #242a56;
+  line-height: 20px;
+}
+
 .services .card-service .button {
   background-color: #e92f3d;
   color: #ffffff;
@@ -323,11 +325,6 @@ h1 {
   display: inline-block;
   font-size: 18px;
   text-align: center;
-}
-
-.services .card-service .content p {
-  color: #242a56;
-  line-height: 20px;
 }
 
 .services .card-service:hover {
@@ -368,6 +365,11 @@ h1 {
 .services .card-service:hover:after {
   -webkit-transform: translate(50%, 0) scale(1.1);
           transform: translate(50%, 0) scale(1.1);
+}
+
+.services .card-service a {
+  text-decoration: none;
+  font-weight: 500;
 }
 
 @-webkit-keyframes rotate {
@@ -414,11 +416,6 @@ h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-}
-
-.services .card-service a {
-  text-decoration: none;
-  font-weight: 500;
 }
 
 /* --- == ===  M E D I A   Q U E R Y S  === == --- */
