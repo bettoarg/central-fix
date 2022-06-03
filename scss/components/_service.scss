@@ -1,3 +1,5 @@
+@import '../base/variable';
+
 .services {
   display: flex;
   justify-content: center;
@@ -37,16 +39,9 @@
     }
 
     .button {
+      @extend .btn;
       background-color: $iconcolor;
       color: $whitecolor;
-      border: none;
-      border-radius: 10px;
-      width: 120px;
-      padding: 12px;
-      margin-top: 1.8rem;
-      display: inline-block;
-      font-size: 18px;
-      text-align: center;
     }
     
     &:hover {

@@ -1,3 +1,5 @@
+@import '../base/variable';
+
 .team {
   display: flex;
   justify-content: center;
@@ -23,12 +25,8 @@
 
     .pic {
       img {
-        height: 120px;
-        width: 120px;
-        border-radius: 50%;
+        @include perfil (120px, 120px, 50%, -90px, relative);
         border: .3rem solid $whitecolor;
-        margin-top: -90px;
-        position: relative;
       }
     }
 

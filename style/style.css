@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +29,19 @@ h2 {
   color: #242a56;
 }
 
+/* Uso de extend */
+.btn, .services .card-service .button {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Uso de mixin */
 .bg-dark {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/bg-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-hero.jpg);
@@ -201,6 +216,35 @@ h2 {
   margin-bottom: 1rem;
 }
 
+body {
+  background-color: #eff2ff;
+}
+
+h2 {
+  padding: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: #242a56;
+  font-weight: 600;
+}
+
+.tituloSection {
+  color: #242a56;
+}
+
+/* Uso de extend */
+.btn, .services .card-service .button {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Uso de mixin */
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,9 +280,9 @@ h2 {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  border: 0.3rem solid #ffffff;
   margin-top: -90px;
   position: relative;
+  border: 0.3rem solid #ffffff;
 }
 
 .team .card-team .info h3 {
@@ -268,6 +312,35 @@ h2 {
           transform: scale(2);
 }
 
+body {
+  background-color: #eff2ff;
+}
+
+h2 {
+  padding: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: #242a56;
+  font-weight: 600;
+}
+
+.tituloSection {
+  color: #242a56;
+}
+
+/* Uso de extend */
+.btn, .services .card-service .button {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Uso de mixin */
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,14 +390,6 @@ h2 {
 .services .card-service .button {
   background-color: #e92f3d;
   color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  width: 120px;
-  padding: 12px;
-  margin-top: 1.8rem;
-  display: inline-block;
-  font-size: 18px;
-  text-align: center;
 }
 
 .services .card-service:hover {
@@ -419,41 +484,9 @@ h2 {
 }
 
 /* --- == ===  M E D I A   Q U E R Y S  === == --- */
-/* Esta sección de media no está hecha con SASS */
-
 @media screen and (max-width: 1200px) {
   .services {
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .repair-mobile > div {
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-
-  .repair-notebooks > div {
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-
-  .accesories > div {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 642px) {
-  .repair-mobile > div img {
-    width: 100%;
-  }
-
-  .repair-notebooks > div img {
-    width: 100%;
-  }
-
-  .accesories > div img {
-    width: 100%;
   }
 }
 

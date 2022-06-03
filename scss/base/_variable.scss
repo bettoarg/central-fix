@@ -28,3 +28,24 @@ h2 {
 .tituloSection {
   color: $darkblue;
 }
+
+/* Uso de extend */
+.btn {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Uso de mixin */
+@mixin perfil ($height, $width, $border, $margin, $position) {
+  height: $height;
+  width: $width;
+  border-radius: $border;
+  margin-top: $margin;
+  position: $position;
+}
