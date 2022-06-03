@@ -490,6 +490,36 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .repair-mobile > div {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .repair-notebooks > div {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .accesories > div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 642px) {
+  .repair-mobile > div img {
+    width: 100%;
+  }
+
+  .repair-notebooks > div img {
+    width: 100%;
+  }
+
+  .accesories > div img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .testimonials {
     flex-direction: column;
