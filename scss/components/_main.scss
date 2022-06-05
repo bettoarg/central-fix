@@ -1,11 +1,23 @@
-.repair-mobile>div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2.2rem;
+// .repair-mobile>div {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 2.2rem;
 
-  img {
-    border-radius: 1rem;
-    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   img {
+//     border-radius: 1rem;
+//     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   }
+// }
+.repair-mobile> {
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2rem;
+
+    img {
+      border-radius: 1rem;
+      box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
@@ -20,24 +32,49 @@
 }
 
 
-.repair-notebooks>div {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  margin-bottom: 2.2rem;
+// .repair-notebooks>div {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row-reverse;
+//   margin-bottom: 2.2rem;
 
-  img {
-    border-radius: 1rem;
-    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   img {
+//     border-radius: 1rem;
+//     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   }
+// }
+
+.repair-notebooks> {
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 2.2rem;
+
+    img {
+      border-radius: 1rem;
+      box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    }
   }
 }
 
-.accesories>div {
-  display: flex;
-  align-items: center;
+// .accesories>div {
+//   display: flex;
+//   align-items: center;
 
-  img {
-    border-radius: 1rem;
-    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   img {
+//     border-radius: 1rem;
+//     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+//   }
+// }
+.accesories> {
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 1rem;
+      box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    }
   }
 }

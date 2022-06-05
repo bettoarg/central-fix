@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ h2 {
 }
 
 /* Uso de extend */
-.btn, .services .card-service .button {
+.btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
   width: 120px;
@@ -185,37 +186,6 @@ h2 {
   color: #f1c40f;
 }
 
-.social-icon span {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.social-icon a {
-  text-decoration: none;
-}
-
-.link-footer .text-footer {
-  margin-top: 1rem;
-  padding: 0 0 0 2rem;
-}
-
-.link-footer a {
-  text-decoration: none;
-  letter-spacing: .1rem;
-  font-size: 1.2rem;
-  padding: 0 0 0 2rem;
-  margin-bottom: 2rem;
-  color: var(--whitecolor);
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.link-footer ul li {
-  list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 body {
   background-color: #eff2ff;
 }
@@ -233,7 +203,7 @@ h2 {
 }
 
 /* Uso de extend */
-.btn, .services .card-service .button {
+.btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
   width: 120px;
@@ -329,7 +299,7 @@ h2 {
 }
 
 /* Uso de extend */
-.btn, .services .card-service .button {
+.btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
   width: 120px;
@@ -483,6 +453,118 @@ h2 {
   }
 }
 
+body {
+  background-color: #eff2ff;
+}
+
+h2 {
+  padding: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: #242a56;
+  font-weight: 600;
+}
+
+.tituloSection {
+  color: #242a56;
+}
+
+/* Uso de extend */
+.btn, .services .card-service .button, .grid-card .card-product .card-info .button {
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px;
+  margin-top: 1.8rem;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Uso de mixin */
+.grid-card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+  -ms-grid-columns: (minmax(180px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 300px));
+}
+
+.grid-card .card-product {
+  text-align: center;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.grid-card .card-product img {
+  display: block;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.grid-card .card-product .card-info {
+  width: 100%;
+  padding: 20px 0 30px 0;
+}
+
+.grid-card .card-product .card-info h3 {
+  font-weight: 400;
+  color: #242a56;
+}
+
+.grid-card .card-product .card-info p {
+  font-weight: 300;
+  margin: 16px 0;
+}
+
+.grid-card .card-product .card-info .button {
+  background-color: #e92f3d;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.social-icon span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.link-footer .text-footer {
+  margin-top: 1rem;
+  padding: 0 0 0 2rem;
+}
+
+.link-footer a {
+  text-decoration: none;
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+  padding: 0 0 0 2rem;
+  margin-bottom: 2rem;
+  color: var(--whitecolor);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.link-footer ul li {
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* --- == ===  M E D I A   Q U E R Y S  === == --- */
 @media screen and (max-width: 1200px) {
   .services {
@@ -530,33 +612,9 @@ h2 {
   .testimonials {
     flex-direction: column;
   }
-
-  .footer {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .footer ul {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 450) {
-  .footer {
-    flex-direction: column;
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 412px) {
-  .services-wrapper {
-    grid-template-rows: 1fr;
-  }
-
-  .grid {
-    justify-content: center;
-  }
-
   .testimonials {
     flex-direction: column;
   }
