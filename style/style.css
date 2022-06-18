@@ -629,9 +629,12 @@ h2 {
     padding: 0;
   }
 
+  .link-footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
   .link-footer ul li {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
 }
