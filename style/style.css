@@ -619,3 +619,19 @@ h2 {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 412px) {
+  .link-footer .text-footer {
+    padding: 0;
+  }
+
+  .link-footer a {
+    padding: 0;
+  }
+
+  .link-footer ul li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
