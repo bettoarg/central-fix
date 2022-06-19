@@ -30,7 +30,6 @@ h2 {
   color: #242a56;
 }
 
-/* Uso de extend */
 .btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
@@ -42,7 +41,6 @@ h2 {
   text-align: center;
 }
 
-/* Uso de mixin */
 .bg-dark {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/bg-hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-hero.jpg);
@@ -202,7 +200,6 @@ h2 {
   color: #242a56;
 }
 
-/* Uso de extend */
 .btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
@@ -214,7 +211,6 @@ h2 {
   text-align: center;
 }
 
-/* Uso de mixin */
 .team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +294,6 @@ h2 {
   color: #242a56;
 }
 
-/* Uso de extend */
 .btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
@@ -310,7 +305,6 @@ h2 {
   text-align: center;
 }
 
-/* Uso de mixin */
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,7 +463,6 @@ h2 {
   color: #242a56;
 }
 
-/* Uso de extend */
 .btn, .services .card-service .button, .grid-card .card-product .card-info .button {
   border: none;
   border-radius: 10px;
@@ -481,7 +474,6 @@ h2 {
   text-align: center;
 }
 
-/* Uso de mixin */
 .grid-card {
   display: -ms-grid;
   display: grid;
