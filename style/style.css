@@ -7,15 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 body {
   background-color: #eff2ff;
 }
-
 h2 {
   padding: 50px;
   text-align: center;
@@ -23,11 +20,9 @@ h2 {
   color: #242a56;
   font-weight: 600;
 }
-
 .tituloSection {
   color: #242a56;
 }
-
 .btn, .grid-card .card-product .card-info .button, .services .card-service .button {
   border: none;
   border-radius: 10px;
@@ -38,7 +33,6 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
-
 .bg-dark {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg-hero.jpg);
   width: 100%;
@@ -54,7 +48,6 @@ h2 {
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
-
 .repair-mobile > div {
   display: flex;
   align-items: center;
@@ -64,7 +57,6 @@ h2 {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
 }
-
 .paragraph {
   margin: 40px;
   line-height: 1.5;
@@ -73,7 +65,6 @@ h2 {
 .paragraph h3 {
   color: #242a56;
 }
-
 .repair-notebooks > div {
   display: flex;
   align-items: center;
@@ -84,7 +75,6 @@ h2 {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
 }
-
 .accesories > div {
   display: flex;
   align-items: center;
@@ -93,7 +83,6 @@ h2 {
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
 }
-
 .testimonials {
   display: flex;
   gap: 2rem;
@@ -140,11 +129,9 @@ h2 {
   text-align: center;
   color: #f1c40f;
 }
-
 body {
   background-color: #eff2ff;
 }
-
 h2 {
   padding: 50px;
   text-align: center;
@@ -152,11 +139,9 @@ h2 {
   color: #242a56;
   font-weight: 600;
 }
-
 .tituloSection {
   color: #242a56;
 }
-
 .btn, .grid-card .card-product .card-info .button, .services .card-service .button {
   border: none;
   border-radius: 10px;
@@ -167,7 +152,6 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
-
 .team {
   display: flex;
   justify-content: center;
@@ -219,11 +203,9 @@ h2 {
   color: #e92f3d;
   transform: scale(2);
 }
-
 body {
   background-color: #eff2ff;
 }
-
 h2 {
   padding: 50px;
   text-align: center;
@@ -231,11 +213,9 @@ h2 {
   color: #242a56;
   font-weight: 600;
 }
-
 .tituloSection {
   color: #242a56;
 }
-
 .btn, .grid-card .card-product .card-info .button, .services .card-service .button {
   border: none;
   border-radius: 10px;
@@ -246,7 +226,6 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
-
 .services {
   display: flex;
   justify-content: center;
@@ -352,11 +331,9 @@ h2 {
     transform: rotate(0deg);
   }
 }
-
 body {
   background-color: #eff2ff;
 }
-
 h2 {
   padding: 50px;
   text-align: center;
@@ -364,11 +341,9 @@ h2 {
   color: #242a56;
   font-weight: 600;
 }
-
 .tituloSection {
   color: #242a56;
 }
-
 .btn, .grid-card .card-product .card-info .button, .services .card-service .button {
   border: none;
   border-radius: 10px;
@@ -379,7 +354,6 @@ h2 {
   font-size: 18px;
   text-align: center;
 }
-
 .grid-card {
   display: grid;
   justify-content: space-evenly;
@@ -420,21 +394,17 @@ h2 {
   font-weight: 500;
   text-decoration: none;
 }
-
 .social-icon span {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .social-icon a {
   text-decoration: none;
 }
-
 .link-footer .text-footer {
   margin-top: 1rem;
   padding: 0 0 0 2rem;
 }
-
 .link-footer a {
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -450,13 +420,11 @@ h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 @media screen and (max-width: 1200px) {
   .services {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 1199px) {
   .repair-mobile > div {
     flex-direction: column;
@@ -472,7 +440,6 @@ h2 {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 642px) {
   .repair-mobile > div img {
     width: 100%;
@@ -486,25 +453,21 @@ h2 {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 800px) {
   .testimonials {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 640px) {
   .testimonials {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 412px) {
   .testimonials {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 412px) {
   .link-footer .text-footer {
     padding: 0;
